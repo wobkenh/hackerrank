@@ -13,11 +13,12 @@ public class MagicSquareForming {
         int minCost = 999;
         int[] leftoverNumbers = getLeftoverNumbers(s);
         boolean solved;
-        while (!solved) {
+//        while (!solved) {
 
             leftoverNumbers = getLeftoverNumbers(s);
-            if (leftoverNumbers.length)
-        }
+//            if (leftoverNumbers.length)
+//        }
+        return 0;
     }
 
     boolean isMagicNumbers(int[][] s) {
