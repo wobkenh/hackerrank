@@ -8,7 +8,7 @@ public class AppendAndDelete {
         boolean mismatch = false;
         for (int i = 0; i < s.length(); i++) {
             if (i == t.length()) {
-                int rest = s.length() - i;
+                int rest = k - (s.length() - i);
                 return getResultFromRest(rest, i);
             }
             if (s.charAt(i) != t.charAt(i)) {
@@ -18,7 +18,7 @@ public class AppendAndDelete {
             }
         }
         if (!mismatch) {
-            start++;
+            start = s.length();
         }
         turns += s.length() - start;
         turns += t.length() - start;
